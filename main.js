@@ -1,11 +1,18 @@
 const heroUnit = document.getElementById('quoteBlocks')
+let url = 'https://api.quotable.io/quotes/random?limit=1'
 
+const mediaFunction = (media) => {
+    if (media.matches) {
+        heroUnit.classList.add('mobile')
+        url = 'https://api.quotable.io/quotes/random?limit=1&maxlen=100'
+    } 
+}
 
+const mediaQuery = window.matchMedia("(maxwidth: 700px)")
 
 
 
 const dataRequest = async () => {
-    let url = 'https://api.quotable.io/quotes/random?limit=1'
     const res = await fetch(url)
     const quotes = await res.json()
     console.log(quotes)
@@ -38,4 +45,5 @@ const quoteVisibility = heroUnit => {
 
 }
 
+mediaFunction(mediaQuery)
 dataRequest()

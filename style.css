@@ -7,6 +7,10 @@ body {
     font-style: italic;
     font-weight: 200;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -28,25 +32,14 @@ div.hero-card {
 h1.quote-text {
     font-size: 1.7rem;
     width: 45vw;
-    position: absolute;
-    top: 20%;
-    left: 15%;
 }
 
-h3.quote-author {
-    position: absolute;
-    bottom: 40%;
-    right: 25%;
-}
 
 div#hidden {
     display: none;
 }
 
 button#new-quote {
-    position: fixed;
-    bottom: 15%;
-    left: 45%;
     font-size: 1.6rem;
     background-color: #aaa;
     color: #222;
@@ -57,7 +50,6 @@ button#new-quote {
 }
 
 footer {
-    position: fixed;
     bottom: 0%;
     background-color: #222;
     width: 100%;
@@ -86,4 +78,9 @@ footer {
     25% {opacity: 15%;}
     50% {opacity: 65%;}
     100% {opacity: 100%;}
+}
+
+.mobile {
+    overflow-y: visible;
+    font-size: 1.4rem;
 }
