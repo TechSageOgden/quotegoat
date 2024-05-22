@@ -9,6 +9,8 @@ randomly requested 1 per to limit API calls.
 
 Just a small point of clarity, its named QuoteGoats caused I like the rhyme, eh, im weird...
 
+Anyways, hosted on Github Pages @ https://techsageogden.github.io/quotegoat/
+
 ## Special Thanks to lukePeavey & quotable
 
 This project wouldn't be possible without the quotable API @github.com/lukePeavey/quotable
