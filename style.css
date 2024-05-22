@@ -6,6 +6,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     font-weight: 200;
+    overflow: hidden;
 }
 
 nav {
@@ -38,6 +39,23 @@ h3.quote-author {
     right: 25%;
 }
 
+div#hidden {
+    display: none;
+}
+
+button#new-quote {
+    position: fixed;
+    bottom: 15%;
+    left: 45%;
+    font-size: 1.6rem;
+    background-color: #aaa;
+    color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 footer {
     position: fixed;
     bottom: 0%;
@@ -47,4 +65,25 @@ footer {
     box-shadow: -25px -15px 25px #555;
     border: 3px solid #222;
     border-radius: 5px;
+}
+
+.fade {
+    animation: fade-out 0.5s ease-in 0s;
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-in 0s;
+}
+
+@keyframes fade-out {
+    0% {opacity: 100%;}
+    50% {opacity: 35%;}
+    100% {opacity: 5%}
+}
+
+@keyframes fade-in {
+    0% {opacity: 0%;}
+    25% {opacity: 15%;}
+    50% {opacity: 65%;}
+    100% {opacity: 100%;}
 }

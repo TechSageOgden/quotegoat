@@ -1,6 +1,6 @@
 quotable API at github.com/lukePeavey/quotable
 
-API endpoint - https://api.quotable.io/quotes/random?limit=10
+API endpoint - https://api.quotable.io/quotes/random?limit=5
 
 RATE LIMIT 180 calls per minute
 
@@ -27,3 +27,16 @@ Array<{
   // An array of tag names for this quote
   tags: string[]
 }>
+
+
+`
+
+    <div class="hero-card" id="1>
+    </div>
+    <div class="hero-card" id="2">
+    </div>
+    <div class="hero-card" id="3">
+    </div>
+    <div class="hero-card" id="4">
+    </div>
+
